@@ -1,6 +1,5 @@
 import React from 'react'
 import { IProduct } from '../models'
-import { useState } from 'react'
 
 interface ProductProps {
   product: IProduct
@@ -35,7 +34,7 @@ export function Product(props: ProductProps) {
           <p>
             Rate{' '}
             <span style={{ fontWeight: 'bold' }}>
-              {props.product.rating.rate}
+              {props.product?.rating?.rate}
             </span>
           </p>
         </div>
